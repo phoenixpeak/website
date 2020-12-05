@@ -1,7 +1,7 @@
 # Setup
 title:        Phoenix Peak -  Professional SaaS Consulting
 tagline:      Optimize your SaaS.
-baseurl:      ""
+baseurl:      "https://phoenixpeak.github.io/website/"
 locale:       "en"
 
 # About/contact
