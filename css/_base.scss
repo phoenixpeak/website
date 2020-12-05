@@ -1,0 +1,40 @@
+body {
+  background-color: white;
+  font-family: $fonts-brand;
+  color: $grey700;
+  font-size: $fs-medium;
+  line-height: $lh-medium;
+}
+
+h1, h2, h3, h4, h5, p, span, a {
+  line-height: $lh-medium;
+  max-width: 100%;
+}
+
+p {
+  margin-bottom: 1em;
+  line-height: $lh-medium;
+}
+
+strong {
+  font-weight: $fw-bold;
+}
+
+a {
+  color: $blue;
+}
+
+img {
+  -ms-interpolation-mode: bicubic;
+  height: auto;
+  border: none;
+}
+
+hr {
+   background: $bc-normal;
+   height: 1px;
+   border: none;
+   max-width: 100%;
+   width: 100%;
+ }
+

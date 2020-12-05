@@ -16,5 +16,5 @@ gems:
 
 #Others
 sass:
-  sass_dir: _sass
+  sass_dir: css
 markdown: kramdown

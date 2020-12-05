@@ -1,0 +1,43 @@
+.button {
+  -webkit-appearance: none;
+  font-family: $fonts-brand;
+  font-weight: $fw-medium;
+  color: $blue;
+  border: 1px solid $blue;
+  border-radius: $br-large;
+  line-height: 60px;
+  height: 60px;
+  padding: 0 30px;
+  font-size: $fs-large;
+  padding: 0 20px;
+  resize: none;
+  cursor: pointer;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: visible;
+  text-align: center;
+  text-decoration: none;
+  flex-shrink: 0;
+  transition: background 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+  &.blue,
+  &.default {
+    border-color: $blue;
+    color: white;
+    background-color: $blue;
+
+    &:hover {
+    }
+  }
+
+  /* Orange */
+
+  &.orange {
+    border-color: $orange;
+    color: white;
+    background-color: $orange;
+
+    &:hover {
+    }
+  }
+}
