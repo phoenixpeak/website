@@ -15,6 +15,4 @@ gems:
   - jekyll-paginate
 
 #Others
-sass:
-  sass_dir: css
 markdown: kramdown
