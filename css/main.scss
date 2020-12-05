@@ -1,6 +1,10 @@
 ---
+Front matter for compiling
 ---
 
+@import "globals";
+@import "normalize";
+
 body {
-  background-color: red;
+  background-color: #00aaff;
 }
