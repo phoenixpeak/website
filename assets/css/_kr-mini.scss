@@ -1,5 +1,9 @@
 /* Font Colors */
 
+.c-white {
+  color: white;
+}
+
 .c-grey900 {
   color: $grey900;
 }
@@ -50,6 +54,10 @@
 
 /* Background Colors */
 
+.bg-white {
+  color: white;
+}
+
 .bg-grey900 {
   background-color: $grey900;
 }
@@ -96,6 +104,60 @@
 
 .bg-purple {
   background-color: $purple;
+}
+
+/* Font size */
+
+.fs-s {
+  font-size: $fs-small;
+}
+
+.fs-m {
+  font-size: $fs-medium;
+}
+
+.fs-l {
+  font-size: $fs-large;
+}
+
+.fs-xl {
+  font-size: $fs-xlarge;
+}
+
+.fs-xxl {
+  font-size: $fs-xxlarge;
+}
+
+/* Font weight */
+
+.fw-bold {
+  font-weight: $fw-bold;
+}
+
+.fw-medium {
+  font-weight: $fw-medium;
+}
+
+.fw-regular {
+  font-weight: $fw-regular;
+}
+
+.fw-light {
+  font-weight: $fw-light;
+}
+
+/* Line height */
+
+.lh-small {
+  line-height: $lh-small;
+}
+
+.lh-medium {
+  line-height: $lh-medium;
+}
+
+.lh-large {
+  line-height: $lh-large;
 }
 
 /* Margins */
