@@ -1,0 +1,10 @@
+@import "globals";
+@import "normalize";
+
+body {
+  background-color: white;
+  font-family: $fonts-brand;
+  color: $grey700;
+  font-size: $fs-medium;
+  line-height: $lh-medium;
+}

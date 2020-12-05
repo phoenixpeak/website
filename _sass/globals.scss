@@ -1,0 +1,63 @@
+/* Grey Tones (Font Colors) */
+
+$grey900               : #333C40;
+$grey700               : #3D474D;
+$grey500               : #8A9499;
+$grey400               : #B2BBC0;
+$grey300               : #DCE2E6;
+$grey200               : #EDF1F2;
+$grey100               : #F7F9FA;
+
+$grey                  : $grey700; 
+
+/* Main Colors */
+
+$orange                 : #FFAA00;
+$blue                   : #00AAFF;
+$green                  : #3DCC3D;
+$turquoise              : #2BD9D9;
+$red                    : #FF4019;
+$purple                 : #A179F2;
+
+/* Global Settings */
+
+$page-width      : 1100px;
+$fonts-brand     : Ubuntu, Helvetica, Arial, sans-serif;
+
+/* Font Sizes */
+
+$fs-small        : 15px;
+$fs-medium       : 17px;
+$fs-large        : 21px;
+$fs-xlarge       : 40px;
+$fs-xxlarge      : 80px;
+
+/* Font Weights */
+
+$fw-bold       : 700;
+$fw-medium     : 500;
+$fw-regular    : 400;
+$fw-light      : 300;
+
+/* Line Heights */
+
+$lh-small      : 120%;
+$lh-medium     : 140%;
+$lh-large      : 160%;
+
+/* Border Colors */
+
+$bc-normal     : $grey200;
+
+/* Border Radii */
+
+$br-small    : 3px;
+$br-medium   : 7px;
+$br-large    : 10px;
+
+/* Box Shadows */
+
+$bs-small    : 0 0 0 1px rgba(0,0,0,0.07), 0 2px 5px -1px rgba(0,0,0,0.07);
+$bs-medium   : 0 0 0 1px rgba(0,0,0,0.07), 0 5px 10px -5px rgba(0,0,0,0.15);
+$bs-large    : 0 0 0 1px rgba(0,0,0,0.07), 0 10px 30px -10px rgba(0,0,0,0.15);
+
