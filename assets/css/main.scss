@@ -20,13 +20,25 @@ section {
 
 h1 {
     font-size: $fs-xxlarge;
+    line-height: $lh-small;
 }
 
 h2 {
     font-size: $fs-xlarge;
+    line-height: $lh-small;
 }
 
 p {
     font-size: $fs-medium;
 }
   
+
+@include mobile-only {
+    h1 {
+        font-size: 50px;
+    }
+    
+    h2 {
+        font-size: 30px;
+    }
+}
