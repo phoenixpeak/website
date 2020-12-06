@@ -491,7 +491,7 @@ div[shrink] {
 
 /* Background Colors */
 .bg-white {
-  color: white; }
+  background-color: white; }
 
 .bg-grey900 {
   background-color: #333C40; }
@@ -743,6 +743,9 @@ div[shrink] {
 .rad-large {
   border-radius: 10px; }
 
+.rad-100 {
+  border-radius: 100%; }
+
 /* Box Shadows */
 .bs-small {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.07), 0 2px 5px -1px rgba(0, 0, 0, 0.07); }
@@ -774,7 +777,6 @@ div[shrink] {
   height: 60px;
   padding: 0 30px;
   font-size: 21px;
-  padding: 0 20px;
   resize: none;
   cursor: pointer;
   display: inline-block;
@@ -785,7 +787,7 @@ div[shrink] {
   flex-shrink: 0;
   transition: background 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   /* Orange */ }
-  .button.blue, .button.default {
+  .button.blue {
     border-color: #00AAFF;
     color: white;
     background-color: #00AAFF; }
@@ -793,6 +795,8 @@ div[shrink] {
     border-color: #FFAA00;
     color: white;
     background-color: #FFAA00; }
+  .button.rounded {
+    border-radius: 30px; }
 
 body {
   background-color: white;
@@ -818,7 +822,6 @@ a {
 
 img {
   -ms-interpolation-mode: bicubic;
-  height: auto;
   border: none; }
 
 hr {
@@ -839,7 +842,6 @@ hr {
   height: 60px;
   padding: 0 30px;
   font-size: 21px;
-  padding: 0 20px;
   resize: none;
   cursor: pointer;
   display: inline-block;
@@ -850,7 +852,7 @@ hr {
   flex-shrink: 0;
   transition: background 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   /* Orange */ }
-  .button.blue, .button.default {
+  .button.blue {
     border-color: #00AAFF;
     color: white;
     background-color: #00AAFF; }
@@ -858,9 +860,11 @@ hr {
     border-color: #FFAA00;
     color: white;
     background-color: #FFAA00; }
+  .button.rounded {
+    border-radius: 30px; }
 
 section .content {
-  max-width: 1100px;
+  max-width: 1000px;
   padding: 0 20px;
   margin: 0 auto; }
 

@@ -9,7 +9,6 @@
   height: 60px;
   padding: 0 30px;
   font-size: $fs-large;
-  padding: 0 20px;
   resize: none;
   cursor: pointer;
   display: inline-block;
@@ -20,8 +19,7 @@
   flex-shrink: 0;
   transition: background 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 
-  &.blue,
-  &.default {
+  &.blue {
     border-color: $blue;
     color: white;
     background-color: $blue;
@@ -39,5 +37,9 @@
 
     &:hover {
     }
+  }
+
+  &.rounded {
+    border-radius: 30px;
   }
 }

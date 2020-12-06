@@ -55,7 +55,7 @@
 /* Background Colors */
 
 .bg-white {
-  color: white;
+  background-color: white;
 }
 
 .bg-grey900 {
@@ -399,6 +399,10 @@
 
 .rad-large {
   border-radius: $br-large;
+}
+
+.rad-100 {
+  border-radius: 100%;
 }
 
 /* Box Shadows */
