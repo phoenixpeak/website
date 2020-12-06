@@ -1,7 +1,10 @@
-<div column class="align-items-center" style="padding: 0 20px">
-    <div column class="bg-white rad-100 align-items-center justify-center mb-20" style="width: 100px; height: 100px">
-        <img src="{{ site.baseurl }}/assets/images/{{ include.image }}" style="width: 48px; height: 48px" />
-    </div>
-    <h3 class="fs-m fw-bold">{{ include.title }}</h3>
-    <p>{{ include.subtitle }}</p>
-</div>
+<a href="{{ include.link }}" class="c-grey900 td-none h-hover-raise">
+    <span class="h-flex-column align-items-center" style="padding: 0 20px">
+        <span class="h-flex-column bg-white rad-100 align-items-center justify-center mb-20"
+            style="width: 100px; height: 100px">
+            <img src="{{ site.baseurl }}/assets/images/{{ include.image }}" style="width: 48px; height: 48px" />
+        </span>
+        <h3 class="fs-m fw-bold ">{{ include.title }}</h3>
+        <p>{{ include.subtitle }}</p>
+    </span>
+</a>
