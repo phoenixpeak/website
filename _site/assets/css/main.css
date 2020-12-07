@@ -876,10 +876,30 @@ hr {
   .button.rounded {
     border-radius: 30px; }
 
-section .content {
-  max-width: 1000px;
-  padding: 0 20px;
-  margin: 0 auto; }
+.wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 1px; }
+
+section {
+  position: relative; }
+  section .content {
+    max-width: 1000px;
+    padding: 0 20px;
+    margin: 0 auto; }
+
+.parallax::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(2);
+  background-size: 100%;
+  z-index: -1;
+  background: white url("/assets/images/squircles-blue.svg") no-repeat center 40px; }
 
 h1 {
   font-size: 80px;
@@ -901,7 +921,7 @@ p {
 @media only screen and (max-width: 680px) {
   h1 {
     font-size: 50px;
-    margin-bottom: 30px; }
+    margin-bottom: 35px; }
 
   h2 {
     font-size: 30px; }

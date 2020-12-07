@@ -7,48 +7,52 @@ title: {{ site.name }}
     <div class="content ta-center">
         <img src="{{ site.baseurl }}/assets/images/logo-square.svg" width="140" class="logo" />
         <h1>Optimize Your SaaS.</h1>
-        <p class="c-grey500 fw-light lh-small tt-uppercase mb-0" style="font-size: 25px; letter-spacing: 0.4rem;">Product and
+        <p class="c-grey500 fw-light lh-small tt-uppercase mb-0" style="font-size: 25px; letter-spacing: 0.4rem;">
+            Product and
             Marketing Services for Cloud Apps</p>
     </div>
 </section>
 
-</section>
-<section
-    style="padding: 40px 0 0 0; background: white url('{{ site.baseurl }}/assets/images/squircles-blue.svg') no-repeat center -80px;" />
-<div class="content ta-center">
-    <p class="mb-80">
-        <span class="bg-white h-iblock" style="border-radius: 35px; padding: 5px">
-            <a href="#" class="button rounded orange" style="padding: 0 100px">Contact Us</a>
-        </span>
-    </p>
-    <div row class="resp-flex-row justify-sb mb-40">
-        {% include image-block.html 
+<section style="padding: 40px 0 0 0;">
+    <div class="parallax">
+
+        <div class="content ta-center">
+            <p class="mb-80">
+                <span class="bg-white h-iblock" style="border-radius: 35px; padding: 5px">
+                    <a href="#" class="button rounded orange" style="padding: 0 100px">Contact Us</a>
+                </span>
+            </p>
+            <div row class="resp-flex-row justify-sb mb-40">
+                {% include image-block.html 
             image="icons/webinar.svg"
             link="#digital"
             title="Digital Marketing"
             subtitle="SEO, SEM and SEA" %}
 
-        {% include image-block.html 
+                {% include image-block.html 
             image="icons/notes.svg"
             link="#content"
             title="Content Marketing"
             subtitle="Blogs & Microsites" %}
 
-        {% include image-block.html 
+                {% include image-block.html 
             image="icons/globe.svg"
             link="#content"
             title="Translation Services"
             subtitle="English, German, French" %}
 
-        {% include image-block.html 
+                {% include image-block.html 
             image="icons/rocket.svg"
             link="#product"
             title="Product Strategy"
             subtitle="with PLG and OKR" %}
+            </div>
+        </div>
     </div>
-</div>
 
-<div style="height: 100px; background: transparent url('{{ site.baseurl }}/assets/images/oval-grey.svg') no-repeat center top;"></div>
+    <div
+        style="height: 100px; background: transparent url('{{ site.baseurl }}/assets/images/oval-grey.svg') no-repeat center top;">
+    </div>
 </section>
 
 
