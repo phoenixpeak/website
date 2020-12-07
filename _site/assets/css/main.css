@@ -794,7 +794,7 @@ div[shrink] {
   transition: background 0.2s ease-in-out, box-shadow 0.2s ease-in-out, opacity 0.2s ease-in-out;
   /* Orange */ }
   .button:hover {
-    opacity: 0.95;
+    opacity: 0.9;
     box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12); }
   .button.blue {
     border-color: #00AAFF;
@@ -863,7 +863,7 @@ hr {
   transition: background 0.2s ease-in-out, box-shadow 0.2s ease-in-out, opacity 0.2s ease-in-out;
   /* Orange */ }
   .button:hover {
-    opacity: 0.95;
+    opacity: 0.9;
     box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12); }
   .button.blue {
     border-color: #00AAFF;
@@ -883,7 +883,8 @@ section .content {
 
 h1 {
   font-size: 80px;
-  line-height: 110%; }
+  line-height: 110%;
+  margin-bottom: 10px; }
 
 h2 {
   font-size: 40px;
@@ -893,9 +894,18 @@ p {
   font-size: 17px;
   text-transform: capitalize; }
 
+.logo {
+  width: 140px;
+  margin: 40px 0; }
+
 @media only screen and (max-width: 680px) {
   h1 {
-    font-size: 50px; }
+    font-size: 50px;
+    margin-bottom: 30px; }
 
   h2 {
-    font-size: 30px; } }
+    font-size: 30px; }
+
+  .logo {
+    width: 100px;
+    margin: 30px 0; } }

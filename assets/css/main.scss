@@ -21,6 +21,7 @@ section {
 h1 {
     font-size: $fs-xxlarge;
     line-height: $lh-small;
+    margin-bottom: 10px;
 }
 
 h2 {
@@ -33,13 +34,24 @@ p {
     text-transform: capitalize;
 }
   
+.logo {
+    width: 140px; 
+    margin: 40px 0;    
+}
 
 @include mobile-only {
     h1 {
         font-size: 50px;
+        margin-bottom: 30px;
     }
     
     h2 {
         font-size: 30px;
     }
+
+    .logo {
+        width: 100px; 
+        margin: 30px 0;    
+    }
+    
 }
