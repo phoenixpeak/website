@@ -15,6 +15,7 @@
     overflow-x: hidden;
     overflow-y: auto;
     perspective: 1px;
+    perspective-origin: 0 0;
 }
 
 section {
@@ -27,17 +28,17 @@ section {
     }
 }
 
-.parallax::after {
-    content: " ";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transform: translateZ(-1px) scale(2);
-    background-size: 100%;
-    z-index: -1;
-    background: white url('/assets/images/squircles-blue.svg') no-repeat center 40px;
+.parallax {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transform-origin: 0 0;
+        transform: translateZ(-1px) scale(2);
+        background-size: 100%;
+        z-index: 3;
+        min-height: 1000px;
 }
 
 h1 {

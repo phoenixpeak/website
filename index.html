@@ -14,39 +14,40 @@ title: {{ site.name }}
 </section>
 
 <section style="padding: 40px 0 0 0;">
-    <div class="parallax">
+    <div class="parallax"
+        style="background: white url('{{ site.baseurl }}/assets/images/squircles-blue.svg') no-repeat center 140px;">
+    </div>
 
-        <div class="content ta-center">
-            <p class="mb-80">
-                <span class="bg-white h-iblock" style="border-radius: 35px; padding: 5px">
-                    <a href="#" class="button rounded orange" style="padding: 0 100px">Contact Us</a>
-                </span>
-            </p>
-            <div row class="resp-flex-row justify-sb mb-40">
-                {% include image-block.html 
+    <div class="content ta-center">
+        <p class="mb-80">
+            <span class="bg-white h-iblock" style="border-radius: 35px; padding: 5px">
+                <a href="#" class="button rounded orange" style="padding: 0 100px">Contact Us</a>
+            </span>
+        </p>
+        <div row class="resp-flex-row justify-sb mb-40">
+            {% include image-block.html 
             image="icons/webinar.svg"
             link="#digital"
             title="Digital Marketing"
             subtitle="SEO, SEM and SEA" %}
 
-                {% include image-block.html 
+            {% include image-block.html 
             image="icons/notes.svg"
             link="#content"
             title="Content Marketing"
             subtitle="Blogs & Microsites" %}
 
-                {% include image-block.html 
+            {% include image-block.html 
             image="icons/globe.svg"
             link="#content"
             title="Translation Services"
             subtitle="English, German, French" %}
 
-                {% include image-block.html 
+            {% include image-block.html 
             image="icons/rocket.svg"
             link="#product"
             title="Product Strategy"
             subtitle="with PLG and OKR" %}
-            </div>
         </div>
     </div>
 

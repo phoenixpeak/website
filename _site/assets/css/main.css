@@ -707,22 +707,6 @@ div[shrink] {
 .ws-nowrap {
   white-space: nowrap; }
 
-/* Borders */
-.b-1 {
-  border: 1px solid transparent; }
-
-.bt-1 {
-  border-top: 1px solid transparent; }
-
-.bb-1 {
-  border-bottom: 1px solid transparent; }
-
-.bl-1 {
-  border-left: 1px solid transparent; }
-
-.br-1 {
-  border-right: 1px solid transparent; }
-
 /* Border Colors */
 .bc-grey500 {
   border-color: #8A9499; }
@@ -755,6 +739,9 @@ div[shrink] {
 
 .bs-large {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.07), 0 10px 30px -10px rgba(0, 0, 0, 0.15); }
+
+.bs-blue {
+  box-shadow: 0 10px 30px -10px rgba(0, 170, 255, 0.8); }
 
 /* Display */
 .h-block {
@@ -880,7 +867,8 @@ hr {
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
-  perspective: 1px; }
+  perspective: 1px;
+  perspective-origin: 0 0; }
 
 section {
   position: relative; }
@@ -889,17 +877,17 @@ section {
     padding: 0 20px;
     margin: 0 auto; }
 
-.parallax::after {
-  content: " ";
+.parallax {
   position: absolute;
   top: 0;
+  left: 0;
   right: 0;
   bottom: 0;
-  left: 0;
+  transform-origin: 0 0;
   transform: translateZ(-1px) scale(2);
   background-size: 100%;
-  z-index: -1;
-  background: white url("/assets/images/squircles-blue.svg") no-repeat center 40px; }
+  z-index: 3;
+  min-height: 1000px; }
 
 h1 {
   font-size: 80px;

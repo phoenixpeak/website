@@ -351,28 +351,6 @@
   white-space: nowrap;
 }
 
-/* Borders */
-
-.b-1 {
-  border: 1px solid transparent;
-}
-
-.bt-1 {
-  border-top: 1px solid transparent;
-}
-
-.bb-1 {
-  border-bottom: 1px solid transparent;
-}
-
-.bl-1 {
-  border-left: 1px solid transparent;
-}
-
-.br-1 {
-  border-right: 1px solid transparent;
-}
-
 /* Border Colors */
 
 .bc-grey500 {
@@ -417,6 +395,10 @@
 
 .bs-large {
   box-shadow: $bs-large;
+}
+
+.bs-blue {
+  box-shadow: $bs-blue;
 }
 
 /* Display */
