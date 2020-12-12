@@ -15,7 +15,7 @@ title: {{ site.name }}
 
 <section style="padding: 40px 0 0 0;">
     <div class="parallax"
-        style="background: white url('{{ site.baseurl }}/assets/images/squircles-blue.svg') no-repeat center 140px;">
+        style="background: white url('{{ site.baseurl }}/assets/images/squircles-blue.svg') no-repeat center 70px;">
     </div>
 
     <div class="content ta-center">
@@ -25,26 +25,26 @@ title: {{ site.name }}
             </span>
         </p>
         <div row class="resp-flex-row justify-sb mb-40">
-            {% include image-block.html 
-            image="icons/webinar.svg"
+            {% include icon-block.html 
+            icon="icons/webinar.svg"
             link="#digital"
             title="Digital Marketing"
             subtitle="SEO, SEM and SEA" %}
 
-            {% include image-block.html 
-            image="icons/notes.svg"
+            {% include icon-block.html 
+            icon="icons/notes.svg"
             link="#content"
             title="Content Marketing"
             subtitle="Blogs & Microsites" %}
 
-            {% include image-block.html 
-            image="icons/globe.svg"
+            {% include icon-block.html 
+            icon="icons/globe.svg"
             link="#content"
             title="Translation Services"
             subtitle="English, German, French" %}
 
-            {% include image-block.html 
-            image="icons/rocket.svg"
+            {% include icon-block.html 
+            icon="icons/rocket.svg"
             link="#product"
             title="Product Strategy"
             subtitle="with PLG and OKR" %}
@@ -59,16 +59,49 @@ title: {{ site.name }}
 
 <section class="bg-grey900" style="padding: 60px 0;">
     <div class="content">
-        <a name="digital"></a>
-        <span class="fs-xl c-grey500">Supercharge your</span><br />
-        <h1 class="c-white">Digital Marketing</h1>
+        <div class="split-wrapper">
+            <div class="split">
+                <a name="digital"></a>
+                <span class="fs-xl c-grey500">Supercharge your</span>
+                <h2 class="c-white mb-40">Digital Marketing</h2>
+                <p class="intro c-white mb-30">
+                    Our multifunctional team of online marketing specialists offers top advertising and search engine
+                    marketing services for local and global SaaS apps.
+                </p>
+                {% include icon-listitem.html 
+                    icon="icons/search.svg"
+                    text="Improve your search engine visibility and organic reach with SEO and SEM" %}
+                {% include icon-listitem.html 
+                    icon="icons/statistics.svg"
+                    text="Optimize ad spending and ROAS with targeted social media  campaigs" %}
+                {% include icon-listitem.html 
+                    icon="icons/iphone.svg"
+                    text="Attract and convert mobile users through App Store Optimization (ASO)" %}
+                    
+            </div>
+
+            <div class="split on-right">
+                <img src="{{ site.baseurl }}/assets/images/macbook.png" class="hero" width="741" height="677" />
+            </div>
+
+        </div>
     </div>
 </section>
 
-<section style="padding: 60px 0;">
+<section class="bg-white" style="padding: 60px 0;">
     <div class="content">
-        <a name="content"></a>
-        <span class="fs-xl c-grey500">Lead your industry with</span><br />
-        <h1>Content Marketing</h1>
-    </div>
+        <div class="split-wrapper">
+            <div class="on-left">
+            </div>
+
+            <div class="split">
+                <a name="content"></a>
+                <span class="fs-xl c-grey500">Lead your industry with</span><br />
+                <h2 class="mb-40">Content Marketing</h2>
+                <p class="intro">
+                    Establish yourself as knowledge leader in your target markets and generate inbound leads using our
+                    scalable content marketing approach.
+                </p>
+            </div>
+        </div>
 </section>
