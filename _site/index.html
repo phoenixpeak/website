@@ -94,8 +94,8 @@
 
 <section class="bg-grey900" style="padding: 60px 0;">
     <div class="content">
-        <div class="split-wrapper">
-            <div class="split">
+        <div class="slide-wrapper fx-animate">
+            <div class="slide on-left">
                 <a name="digital"></a>
                 <span class="fs-xl c-grey500">Supercharge your</span>
                 <h2 class="c-white mb-40">Digital Marketing</h2>
@@ -124,10 +124,10 @@
     </div>
     <p class="c-white mb-0">Attract and convert mobile users through App Store Optimization (ASO)</p>
 </div>
-                    
+
             </div>
 
-            <div class="split on-right">
+            <div class="slide on-right">
                 <img src="/assets/images/macbook.png" class="hero" width="741" height="677" />
             </div>
 
@@ -137,11 +137,11 @@
 
 <section class="bg-white" style="padding: 60px 0;">
     <div class="content">
-        <div class="split-wrapper">
-            <div class="on-left">
+        <div class="slide-wrapper fx-animate">
+            <div class=" slide on-left">
             </div>
 
-            <div class="split">
+            <div class="slide on-right">
                 <a name="content"></a>
                 <span class="fs-xl c-grey500">Lead your industry with</span><br />
                 <h2 class="mb-40">Content Marketing</h2>
@@ -152,6 +152,32 @@
             </div>
         </div>
 </section>
+
+<script>
+    const callback = function (entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                console.log(entry.target);
+                entry.target.className += ' fx-done';
+            }
+        });
+    };
+
+    let observer;
+    const config = {
+        threshold: 0.35
+    };
+    if ('IntersectionObserver' in window)
+        observer = new IntersectionObserver(callback, config);
+
+    document.querySelectorAll('.fx-animate').forEach(entry => {
+        if (observer)
+            observer.observe(entry);
+        else
+            callback([entry]);
+    });
+
+</script>
 
       <footer>
   <section>
