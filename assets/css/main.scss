@@ -27,19 +27,6 @@ section {
     }
 }
 
-.parallax {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    transform-origin: 0 0;
-    transform: translateZ(-0.5px) scale(1.5);
-    background-size: 100%;
-    z-index: -1;
-    min-height: 800px;
-}
-
 h1 {
     font-size: $fs-xxlarge;
     line-height: $lh-small;
@@ -64,6 +51,21 @@ p {
 .logo {
     width: 140px; 
     margin: 40px 0;    
+}
+
+/* scroll effect */
+
+.parallax {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform-origin: 0 0;
+    transform: translateZ(-0.5px) scale(1.5);
+    background-size: 100%;
+    z-index: -1;
+    min-height: 800px;
 }
 
 /* split sections */
@@ -105,7 +107,8 @@ p {
       }
     }
 
-    // slide animations
+    /* slide animations */
+
     &.fx-animate .slide {
         transition: transform 1.2s cubic-bezier(.16,1,.3,1), opacity 1.2s cubic-bezier(.16,1,.3,1);
         opacity: 0;    
@@ -125,10 +128,10 @@ p {
 }
   
   @include tablet-landscape-and-below {
-    .split-wrapper {
+    .slide-wrapper {
       flex-direction: column;
   
-      .split {
+      .slide {
         width: 100%;
         margin: 0 !important;
         align-items: center;
@@ -137,8 +140,7 @@ p {
           text-align: center;
         }
   
-        &[class*='on-'] {
-          height: auto;
+        .image {
           order: 1;
           padding-top: 30px;
         }
