@@ -758,9 +758,6 @@ div[shrink] {
   transform: translateY(-3px);
   transition: transform 0.2s ease-in-out; }
 
-* {
-  background-repeat: no-repeat; }
-
 body {
   background-color: white;
   font-family: Ubuntu, Helvetica, Arial, sans-serif;
@@ -877,11 +874,10 @@ p {
   z-index: -1;
   min-height: 800px; }
 
-/* split sections */
+/* split sliding sections */
 .slide-wrapper {
   display: flex;
-  align-items: center;
-  /* slide animations */ }
+  align-items: center; }
   .slide-wrapper .slide {
     display: flex;
     flex-direction: column;
@@ -893,6 +889,8 @@ p {
       margin-right: 40px; }
     .slide-wrapper .slide:last-child {
       margin-left: 40px; }
+    .slide-wrapper .slide.image {
+      height: 600px; }
     .slide-wrapper .slide.on-left * {
       right: 0; }
     .slide-wrapper .slide.on-right * {
@@ -903,6 +901,9 @@ p {
       width: auto;
       top: 50%;
       transform: translateY(-50%); }
+
+@media only screen and (min-width: 769px) {
+  /* slide animations */
   .slide-wrapper.fx-animate .slide {
     transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1), opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1);
     opacity: 0; }
@@ -910,11 +911,11 @@ p {
       transform: translateX(-35%); }
     .slide-wrapper.fx-animate .slide.on-right {
       transform: translateX(35%); }
-  .slide-wrapper.fx-done .slide {
+  .slide-wrapper.fx-animate.fx-done .slide {
     transform: translateX(0) !important;
-    opacity: 1 !important; }
-
+    opacity: 1 !important; } }
 @media only screen and (max-width: 1024px) {
+  /* responsive slides */
   .slide-wrapper {
     flex-direction: column; }
     .slide-wrapper .slide {
@@ -923,13 +924,15 @@ p {
       align-items: center; }
       .slide-wrapper .slide * {
         text-align: center; }
-      .slide-wrapper .slide .image {
-        order: 1;
-        padding-top: 30px; }
+      .slide-wrapper .slide.image {
+        height: auto;
+        order: -1;
+        padding-bottom: 40px; }
       .slide-wrapper .slide img.hero {
         position: relative;
         max-height: none;
         width: 100%;
+        height: auto;
         top: 0;
         transform: none; } }
 @media only screen and (max-width: 680px) {
@@ -938,7 +941,7 @@ p {
     margin-bottom: 35px; }
 
   h2 {
-    font-size: 30px; }
+    font-size: 50px; }
 
   .logo {
     width: 100px;
