@@ -415,6 +415,14 @@
   display: none;
 }
 
+@include mobile-only {
+
+  .h-hidden-phone {
+    display: none;
+  }
+
+}
+
 /* Effects */
 
 .h-hover-raise:hover {
