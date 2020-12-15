@@ -719,13 +719,13 @@ div[shrink] {
 
 /* Border Radii */
 .rad-small {
-  border-radius: 3px; }
+  border-radius: 10px; }
 
 .rad-medium {
-  border-radius: 7px; }
+  border-radius: 20px; }
 
 .rad-large {
-  border-radius: 10px; }
+  border-radius: 40px; }
 
 .rad-100 {
   border-radius: 100%; }
@@ -800,7 +800,7 @@ hr {
   font-weight: 500;
   color: #00AAFF;
   border: 1px solid #00AAFF;
-  border-radius: 10px;
+  border-radius: 40px;
   line-height: 60px;
   height: 60px;
   padding: 0 30px;
