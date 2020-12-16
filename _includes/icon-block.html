@@ -2,7 +2,9 @@
     <span class="h-flex-column align-items-center" style="padding: 0 20px">
         <span class="h-flex-column bg-white bs-blue rad-100 align-items-center justify-center mb-20"
             style="width: 100px; height: 100px;">
-            <img src="{{ site.baseurl }}/assets/images/{{ include.icon }}" style="width: 48px; height: 48px" />
+            <span class="h-block" style="width: 48px; height: 48px;">
+              {% include {{ include.icon | prepend: 'icons/' | append: '.svg' }} %}
+            </span>
         </span>
         <h3 class="fs-m fw-bold ">{{ include.title }}</h3>
         <p>{{ include.subtitle }}</p>
