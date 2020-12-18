@@ -1,17 +1,41 @@
 <!DOCTYPE html>
 <html lang="{{ site.locale }}">
-  
-  {% include head.html %}
 
-  <body>
-    <div class="wrapper">
-    
-      {% include page-header.html %}
+{% include head.html %}
 
-      {{ content }}
+<body>
+  <div class="wrapper">
 
-      {% include page-footer.html %}
+    {% include page-header.html %}
 
-    </div>
-  </body>
+    {{ content }}
+
+    {% include page-footer.html %}
+
+  </div>
+</body>
+<script>
+  const callback = function (entries) {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.className += ' fx-done';
+      }
+    });
+  };
+
+  let observer;
+  const config = {
+    threshold: 0.35
+  };
+  if ('IntersectionObserver' in window)
+    observer = new IntersectionObserver(callback, config);
+
+  document.querySelectorAll('.fx-animate').forEach(entry => {
+    if (observer)
+      observer.observe(entry);
+    else
+      callback([entry]);
+  });
+
+</script>
 </html>

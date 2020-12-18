@@ -118,57 +118,32 @@ title: {{ site.name }}
       We try to be as reachable as possible. Please use any of the contact channels below to get in touch with us, or
       follow our updates and news alerts online.
     </p>
-    <div grid class="justify-sb">
+    <div class="h-flex resp-flex-row justify-sb">
       {% include contact-box.html 
       icon="company"
       icon_color="purple"
       title="Corporate Address"
       text="Phoenix Peak GmbH<br/>Mariahilferstrasse 97<br/>1060 Vienna<br/>Austria" 
-      link="#digital"
+      link="https://goo.gl/maps/5oaGicTbmr1dyNAQ8"
       link_caption="Find Us" %}
 
       {% include contact-box.html 
       icon="people"
       icon_color="blue"
-      title="Corporate Address"
-      text="Phoenix Peak GmbH<br/>Mariahilferstrasse 97<br/>1060 Vienna<br/>Austria" 
+      title="phoenix<strong>peak</strong> Consulting"
+      text="For inquiries about our  consulting services for SaaS companies.<br/><br/>" 
       link="#digital"
-      link_caption="Find Us" %}
+      link_caption="Contact Us" %}
 
       {% include contact-box.html 
       icon="rocket"
       icon_color="turquoise"
-      title="Corporate Address"
-      text="Phoenix Peak GmbH<br/>Mariahilferstrasse 97<br/>1060 Vienna<br/>Austria" 
+      title="phoenix<strong>peak</strong> Ventures"
+      text="For inquiries regarding our venture and investment activities.<br/><br/>" 
       link="#digital"
-      link_caption="Find Us" %}
+      link_caption="Contact Us" %}
     </div>
 
   </div>
 </section>
 
-
-<script>
-  const callback = function (entries) {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.className += ' fx-done';
-      }
-    });
-  };
-
-  let observer;
-  const config = {
-    threshold: 0.35
-  };
-  if ('IntersectionObserver' in window)
-    observer = new IntersectionObserver(callback, config);
-
-  document.querySelectorAll('.fx-animate').forEach(entry => {
-    if (observer)
-      observer.observe(entry);
-    else
-      callback([entry]);
-  });
-
-</script>
