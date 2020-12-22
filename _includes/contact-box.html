@@ -1,8 +1,8 @@
-<div column class="rad-large mb-20" style="background-color: rgba(255,255,255,0.1); width: 100%; max-width: calc((100% - 80px) / 3); padding: 40px 30px;">
+<div column class="rad-large mb-30 fx-animate blend delay-{{ include.delay }}" style="background-color: rgba(255,255,255,0.1); width: 100%; flex: 0 0 30.5%; padding: 40px 30px;">
   <div class="mb-30 c-{{ include.icon_color }}" style="width: 48px; height: 48px;">
     {% include {{ include.icon | prepend: 'icons/' | append: '.svg' }} %}
   </div>
   <p class="c-white fw-medium">{{ include.title }}</p>
   <p class="c-white mb-30">{{ include.text }}</p>
-  <p><a href="{{ include.link }}" class="icon-link fw-medium td-none">{{ include.link_caption }}</a></p>
+  <p><a href="{{ include.link }}" target="_blank" class="icon-link fw-medium td-none">{{ include.link_caption }}</a></p>
 </div>
