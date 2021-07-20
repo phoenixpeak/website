@@ -1,13 +1,13 @@
 # Setup
 title:        Phoenix Peak -  Professional SaaS Consulting
 tagline:      Optimize your SaaS.
-baseurl:      "/website"
+baseurl:      "/"
 locale:       "en"
 
 # About/contact
 author:
   name:       Michael Hollauf
-  url:        http://yourhomepage.com 
+  url:        http://phoenixpeak.eu 
 
 #Others
 sass:
