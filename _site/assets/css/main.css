@@ -936,12 +936,6 @@ p {
   opacity: 0; }
   .fx-animate.blend.fx-done {
     opacity: 1; }
-.fx-animate.delay-1 {
-  transition-delay: 0.2s; }
-.fx-animate.delay-2 {
-  transition-delay: 0.4s; }
-.fx-animate.delay-3 {
-  transition-delay: 0.6s; }
 
 @media only screen and (min-width: 769px) {
   /* slide animations */
