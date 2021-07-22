@@ -1,2 +1,14 @@
 # Setup
+title:        DEV Phoenix Peak -  Professional SaaS Consulting
+tagline:      Optimize your SaaS.
 baseurl:      ""
+locale:       "en"
+
+# About/contact
+author:
+  name:       Michael Hollauf
+  url:        http://phoenixpeak.eu 
+
+#Others
+sass:
+  sass_dir: assets/css
